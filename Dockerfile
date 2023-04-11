@@ -49,7 +49,7 @@ RUN git clone $HANDBRAKE_URL_GIT
 WORKDIR /HB/HandBrake
 
 RUN git checkout $HANDBRAKE_VERSION_TAG
-RUN add module.defs /HB/HandBrake/contrib/ffmpeg/module.defs
+ADD module.defs /HB/HandBrake/contrib/ffmpeg/module.defs
 RUN find / -xdev  -name module.defs -ls
 RUN ./scripts/repo-info.sh > version.txt
 
