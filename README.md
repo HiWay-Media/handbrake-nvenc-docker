@@ -25,6 +25,14 @@ An official guide by Nvidia can be found [here](https://docs.nvidia.com/datacent
 | `14x`           | 1.4.2             |
 | `13x`           | 1.3.x-git         |
 
+
+
+#### Build
+```
+docker build  . --progress=plain  -t docker-registry.tngrm.io/handbrake:ffmpeg5
+
+```
+
 Launch the HandBrake docker container with the following command:
 
 ```
