@@ -177,6 +177,8 @@ RUN \
 
 # Copy HandBrake from base build image
 COPY --from=builder /usr/local /usr
+COPY --from=builder /HB/HandBrake/build/contrib/bin/ffmpeg /usr/local/bin/ffmpeg
+
 
 # Define mountable directories
 VOLUME ["/config"]
