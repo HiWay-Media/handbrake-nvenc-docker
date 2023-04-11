@@ -49,6 +49,8 @@ RUN git clone $HANDBRAKE_URL_GIT
 WORKDIR /HB/HandBrake
 
 RUN git checkout $HANDBRAKE_VERSION_TAG
+RUN find . -name module.defs -ls
+#RUN add module.defs HandBrake/blob/1.6.1/contrib/ffmpeg/module.defs
 RUN ./scripts/repo-info.sh > version.txt
 
 RUN echo "Compiling HandBrake..."
