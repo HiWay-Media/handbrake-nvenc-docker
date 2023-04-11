@@ -3,12 +3,12 @@ FROM debian:11 AS builder
 MAINTAINER zocker-160
 
 #ENV HANDBRAKE_VERSION_TAG 1.6.1
-#ENV HANDBRAKE_VERSION_TAG main
+ENV HANDBRAKE_VERSION_TAG main
 ENV HANDBRAKE_VERSION_BRANCH 1.6.x
 ENV HANDBRAKE_DEBUG_MODE none
 
 ENV HANDBRAKE_URL https://api.github.com/repos/HandBrake/HandBrake/releases/tags/$HANDBRAKE_VERSION
-ENV HANDBRAKE_URL_GIT https://github.com/HiWay-Media/Handbrake-1.6.git
+ENV HANDBRAKE_URL_GIT https://github.com/HiWay-Media/Handbrake.git
 ENV DEBIAN_FRONTEND noninteractive
 
 
