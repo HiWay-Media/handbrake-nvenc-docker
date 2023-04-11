@@ -41,7 +41,7 @@ FFMPEG.CONFIGURE.extra = \
     --disable-vdpau \
     --disable-encoders \
     --enable-libmp3lame \
-    --enable-libsrt \
+    --disable-libsrt \
     --enable-encoder=aac \
     --enable-encoder=ac3 \
     --enable-encoder=eac3 \
