@@ -31,7 +31,7 @@ RUN apt-get install -y \
     intltool libdbus-glib-1-dev libglib2.0-dev libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev libgtk-3-dev libgudev-1.0-dev libnotify-dev libwebkit2gtk-4.0-dev
 
 RUN apt-get install -y \ 
-    libsrt-dev libssl-dev
+    libsrt-openssl-dev
 
 
 
