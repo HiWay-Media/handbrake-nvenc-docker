@@ -8,8 +8,7 @@ ENV HANDBRAKE_VERSION_BRANCH 1.6.x
 ENV HANDBRAKE_DEBUG_MODE none
 
 ENV HANDBRAKE_URL https://api.github.com/repos/HandBrake/HandBrake/releases/tags/$HANDBRAKE_VERSION
-ENV HANDBRAKE_URL_GIT https://github.com/HiWay-Media/HandBrake.git
-
+ENV HANDBRAKE_URL_GIT https://github.com/HiWay-Media/Handbrake-1.6.git
 ENV DEBIAN_FRONTEND noninteractive
 
 
