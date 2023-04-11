@@ -30,9 +30,9 @@ endif
 FFMPEG.CONFIGURE.extra = \
     --enable-gpl \
     --disable-doc \
-    --enable-programs \
-    --enable-ffmpeg \
+    --disable-programs \
     --disable-ffplay \
+    --enable-ffmpeg \
     --disable-avdevice \
     --disable-muxers \
     --disable-network \
@@ -40,8 +40,8 @@ FFMPEG.CONFIGURE.extra = \
     --disable-hwaccels \
     --disable-vdpau \
     --disable-encoders \
-    --enable-libsrt \
     --enable-libmp3lame \
+    --enable-libsrt \
     --enable-encoder=aac \
     --enable-encoder=ac3 \
     --enable-encoder=eac3 \
@@ -189,3 +189,4 @@ endif
 ifeq (solaris-sparc,$(HOST.system)-$(HOST.machine))
     FFMPEG.CONFIGURE.extra += --disable-demuxer=mpc8
 endif
+
