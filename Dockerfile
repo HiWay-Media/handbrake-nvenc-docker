@@ -46,7 +46,7 @@ RUN git clone $HANDBRAKE_URL_GIT
 ## Compile HandBrake
 WORKDIR /HB/HandBrake
 
-RUN git checkout $HANDBRAKE_VERSION_TAG
+#RUN git checkout $HANDBRAKE_VERSION_TAG
 RUN ./scripts/repo-info.sh > version.txt
 
 RUN echo "Compiling HandBrake..."
