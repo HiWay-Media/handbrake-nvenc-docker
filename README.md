@@ -33,6 +33,14 @@ docker build  . --progress=plain  -t docker-registry.tngrm.io/handbrake:ffmpeg5
 
 ```
 
+
+#### TEST ffmpeg
+```
+sh test.sh
+
+```
+
+
 Launch the HandBrake docker container with the following command:
 
 ```
