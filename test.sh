@@ -9,3 +9,9 @@ docker run --rm -it --gpus all \
       -i /tmp/input.mp4 \
       -c:v h264_nvenc \
       /tmp/out.mkv
+
+docker run --rm -it --gpus all \
+    -e NVIDIA_VISIBLE_DEVICES=all \
+    -e NVIDIA_DRIVER_CAPABILITIES=compute,utility,video \
+    --volume $PWD:/tmp \
+    docker-registry.tngrm.io/handbrake:ffmpeg5  ffprobe /tmp/input.mp4
